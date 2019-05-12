@@ -32,6 +32,7 @@ namespace TicTacToe
             };
             currentBoard = newBoard;
             Winner = false;
+            Draw = false;
             curPlayer = "";
         }
 
@@ -137,7 +138,6 @@ namespace TicTacToe
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine("DRAW!, hit enter to continue");
                     Console.ReadKey(true);
-                    Draw = false;
                 }
 
                 if (Winner == true)
@@ -146,7 +146,6 @@ namespace TicTacToe
                     Console.WriteLine("Player {0} is the WINNER!, hit enter to continue", curPlayer);
                     Console.ReadKey(true);
                     p = 11;
-                    Winner = false;
                 }
             }
         }
