@@ -30,7 +30,7 @@ namespace TicTacToe
                 { '4', '5', '6' },
                 { '7', '8', '9' }
             };
-            currentBoard = newBoard;
+            currentBoard = newBoard;  // New board!
             Winner = false;
             Draw = false;
             curPlayer = "";
